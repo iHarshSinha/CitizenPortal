@@ -1,0 +1,80 @@
+{
+
+"complaint": {
+
+  "cluster" : "rasp_db",
+  "ui" : false,
+  "api" : true,
+  "fields" : {
+    "id": {
+
+     "name" : "id",
+     "required" : "true",
+     "type" : "String"
+     },
+    "citizen_email": {
+
+     "name" : "citizen_email",
+     "required" : "true",
+     "type" : "String"
+     },
+    "complaint_text": {
+
+     "name" : "complaint_text",
+     "required" : "true",
+     "type" : "String"
+     },
+    "complaint_location": {
+
+     "name" : "complaint_location",
+     "required" : "true",
+     "type" : "String"
+     },
+    "complaint_image": {
+
+     "name" : "complaint_image",
+     "required" : "false",
+     "is_file" : "true",
+     "type" : "String"
+     },
+    "date_of_request": {
+
+     "name" : "date_of_request",
+     "required" : "true",
+     "type" : "Date"
+     },
+    "date_of_completion": {
+
+     "name" : "date_of_completion",
+     "required" : "false",
+     "type" : "Date"
+     },
+    "complaint_status": {
+
+     "name" : "complaint_status",
+     "required" : "true",
+     "is_enum" : "true",
+      "possible_value" : "Complaint_status",
+     "type" : "String"
+     },
+    "curr_dept_id": {
+
+     "name" : "curr_dept_id",
+     "required" : "false",
+     "foreign" : {
+      "resource" : "Department" 
+      },
+     "type" : "Long"
+     },
+    "remarks": {
+
+     "name" : "remarks",
+     "required" : "false",
+     "type" : "String"
+      }
+   
+  }
+ }
+
+}
+

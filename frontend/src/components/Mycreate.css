@@ -1,0 +1,143 @@
+/* ============================
+   Harsh (hs-) Scoping Prefix
+   ============================ */
+
+/* Container */
+.hs-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dedede;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.07);
+}
+
+/* Heading */
+.hs-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Form Groups */
+.hs-form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.hs-label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* Input Styles */
+.hs-input,
+.hs-file {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  background: #fafafa;
+}
+
+.hs-input:focus,
+.hs-file:focus {
+  outline: none;
+  border-color: #28a745;
+  background: #fff;
+  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.2);
+}
+
+/* Submit Button */
+.hs-btn-submit {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background: #28a745;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.hs-btn-submit:hover {
+  background: #218838;
+}
+
+/* Toast Notification */
+.hs-toast-container {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;
+}
+
+.hs-toast {
+  background: #e9ffe9;
+  border-left: 6px solid #28a745;
+  border-radius: 8px;
+  padding: 14px 20px;
+  width: 260px;
+  color: #155724;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  animation: hsSlideDown 0.35s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hs-toast-close {
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #155724;
+}
+
+/* Toast Animation */
+@keyframes hsSlideDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0px);
+  }
+}
+
+/* ============================
+   Responsive
+   ============================ */
+
+@media (max-width: 600px) {
+  .hs-container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .hs-title {
+    font-size: 1.5rem;
+  }
+
+  .hs-input,
+  .hs-file {
+    font-size: 0.95rem;
+  }
+
+  .hs-btn-submit {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}

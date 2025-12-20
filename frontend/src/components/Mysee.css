@@ -1,0 +1,164 @@
+/* ===============================
+   Harsh (hs-) complaint styling
+   =============================== */
+
+/* Light bluish background for entire page */
+body {
+  background: #f4f8ff; /* soft light blue */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Page Container */
+.hs-read-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffffcc; /* slightly translucent white */
+  border-radius: 14px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 16px rgba(0, 80, 200, 0.08); /* soft blue shadow */
+}
+
+/* Page Title */
+.hs-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1a2a4b; /* darker bluish text */
+}
+
+/* Complaints List Wrapper */
+.hs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Complaint Card */
+.hs-complaint-card {
+  background: #ffffff;
+  padding: 18px 20px;
+  border-radius: 12px;
+  border: 1px solid #cfd9f2; /* soft blue-gray border */
+  box-shadow: 0px 2px 10px rgba(30, 80, 200, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hs-complaint-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 4px 14px rgba(20, 60, 150, 0.18); /* stronger blue shadow */
+}
+
+/* Complaint Title */
+.hs-complaint-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2b3b5f; /* blue-gray heading */
+}
+
+/* Paragraph Formatting */
+.hs-complaint-card p {
+  margin: 6px 0;
+  font-size: 1rem;
+  color: #394a6a; /* bluish-gray body text */
+}
+
+/* Strong Labels */
+.hs-complaint-card strong {
+  color: #1f2f4f;
+}
+
+/* Status Badge */
+.hs-status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* Different Status Colors */
+.hs-status-pending {
+  background-color: #f4c430;
+  color: black;
+}
+
+.hs-status-inprogress {
+  background-color: #007bff;
+}
+
+.hs-status-completed {
+  background-color: #28a745;
+}
+
+.hs-status-rejected {
+  background-color: #dc3545;
+}
+
+/* Image Link */
+.hs-complaint-card a {
+  color: #0055cc; /* bluish link */
+  font-weight: 600;
+}
+
+.hs-complaint-card a:hover {
+  text-decoration: underline;
+  color: #003f99;
+}
+
+/* ===============================
+   Responsive
+   =============================== */
+
+@media (max-width: 600px) {
+  .hs-read-container {
+    padding: 12px;
+  }
+
+  .hs-complaint-card {
+    padding: 14px 16px;
+  }
+
+  .hs-complaint-title {
+    font-size: 1.15rem;
+  }
+
+  .hs-complaint-card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Filter Button Container */
+.hs-filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Filter Buttons */
+.hs-filter-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #bcd0fb;
+  background: #e9f1ff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.hs-filter-btn:hover {
+  background: #dbe8ff;
+}
+
+/* Active Filter */
+.hs-active {
+  background: #0056d6;
+  color: white;
+  border-color: #003c94;
+}

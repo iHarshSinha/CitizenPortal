@@ -1,0 +1,24 @@
+{
+
+"complaint_status": {
+
+  "purpose" : "POSSIBLE_VALUE",
+  "values" : {
+    "pending": {
+
+     "id":"pending", 
+      "name":"pending" 
+   },
+    "assigned": {
+
+     "id":"assigned", 
+      "name":"assigned" 
+   },
+    "completed": {
+
+     "id":"completed", 
+      "name":"completed" 
+   }
+}
+}
+}

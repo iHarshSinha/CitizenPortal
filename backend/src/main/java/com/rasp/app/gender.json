@@ -1,0 +1,24 @@
+{
+
+"gender": {
+
+  "purpose" : "POSSIBLE_VALUE",
+  "values" : {
+    "male": {
+
+     "id":"male", 
+      "name":"male" 
+   },
+    "female": {
+
+     "id":"female", 
+      "name":"female" 
+   },
+    "other": {
+
+     "id":"other", 
+      "name":"other" 
+   }
+}
+}
+}

@@ -1,0 +1,64 @@
+{
+
+"citizen": {
+
+  "cluster" : "rasp_db",
+  "ui" : false,
+  "api" : true,
+  "fields" : {
+    "id": {
+
+     "name" : "id",
+     "required" : "true",
+     "type" : "String"
+     },
+    "citizen_id": {
+
+     "name" : "citizen_id",
+     "required" : "true",
+     "type" : "Long"
+     },
+    "aadhar_id": {
+
+     "name" : "aadhar_id",
+     "required" : "true",
+     "type" : "String"
+     },
+    "name": {
+
+     "name" : "name",
+     "required" : "true",
+     "type" : "String"
+     },
+    "dob": {
+
+     "name" : "dob",
+     "required" : "true",
+     "type" : "Date"
+     },
+    "gender": {
+
+     "name" : "gender",
+     "required" : "true",
+     "is_enum" : "true",
+      "possible_value" : "Gender",
+     "type" : "String"
+     },
+    "phone_no": {
+
+     "name" : "phone_no",
+     "required" : "true",
+     "type" : "String"
+     },
+    "email": {
+
+     "name" : "email",
+     "required" : "false",
+     "type" : "String"
+      }
+   
+  }
+ }
+
+}
+
